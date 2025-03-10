@@ -3,14 +3,30 @@ import "./services.css";
 
 const myServices = [
   {
-    title: "Websites Development",
+    title: "Frontend Development",
     service: [
-      "Web Development: I can design and develop custom websites from scratch, utilizing modern web technologies such as HTML, CSS, JavaScript, Wordpress, PHP and React",
-      "Front-End Development: I can develop the front-end part of websites, including user interfaces, responsive designs, and interactive elements to enhance user experience.",
-      "E-commerce Website Development: I can design and develop e-commerce Wordpress websites with payment gateway integration, shopping carts, product management, and other e-commerce features.",
-      "Wordpress Content Websites Development: can design and create Wordpress websites and give the customer the option to manage, change and maintain the content easily",
-      "Page builder websites: can design and build E-commerce and content websites with Elementor, WP bakery, and more",
-      "Website Optimization: I can optimize websites for speed, performance, and search engine optimization (SEO), including image optimization, code optimization, and content optimization.",
+      "Web Development: design and develop custom websites from scratch, utilizing modern web technologies such as HTML, CSS, JavaScript, Wordpress, PHP and React",
+      "Front-End Development: develop the front-end part of websites, including user interfaces, responsive designs, and interactive elements to enhance user experience.",
+
+      "Wordpress Development: design and create Wordpress websites, Ecommerce, content and one pages, and give the customer the option to manage, change and maintain the content easily",
+    ],
+  },
+  {
+    title: "Designing",
+    service: [
+      "Designing the website and app user interfaces according to the website or app goals choosing the right colors, Hierarchy using the UI design princeples using Figma/XD",
+      "Logos and Icons design that fit for the website/app using Illustartor, Canva",
+      "Designing and creating specifiec mockups and pictures using Photoshop",
+      "Creating lotties using Figma/After Effects",
+    ],
+  },
+  {
+    title: "Backend Development",
+    service: [
+      "Designing the website and app user interfaces according to the website or app goals choosing the right colors, Hierarchy using the UI design princeples using Figma/XD",
+      "Logos and Icons design that fit for the website/app using Illustartor, Canva",
+      "Designing and creating specifiec mockups and pictures using Photoshop",
+      "Creating lotties using Figma/After Effects",
     ],
   },
 ];

@@ -91,6 +91,15 @@ const Contact = () => {
             rows="7"
             placeholder="Your Message"
             required
+            onChange={nameHandler}
+            style={
+              inputColor
+                ? { border: "2px solid #4db5ff", transition: "1s ease" }
+                : {
+                    border: "2px solid rgba(77, 181, 255, 0.4)",
+                    transition: "1s ease",
+                  }
+            }
           ></textarea>
           <button type="submit" className="btn btn-primary">
             Send Message

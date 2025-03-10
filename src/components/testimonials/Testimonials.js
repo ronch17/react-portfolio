@@ -10,36 +10,27 @@ import "swiper/css/pagination";
 const dummyData = [
   {
     avatar: "Avt1",
-    name: "Tina Snow",
+    name: "Or Malchi",
     review:
-      "Lorem ipsum dolor sit amet, vel dicta postea dolorum ut, dolor omnes an nec, nam aperiri tibique conceptam id. Te elit omnium nusquam pri. Ex vide reque saepe eum. Sit ceteros facilisis referrentur an, ex eos alia porro, ut eam graece iuvaret legendos. No aperiam deterruisset has. Ex errem constituto mea. Mazim harum iracundia nec eu, nam prompta tibique voluptatibus et.",
+      "Ron is a true professional, he helped me build my website in the most professional way I've ever seen. He was free and available to me and my wishes throughout the entire work with him, and offered great suggestions for improvement, highly recommend!",
   },
   {
     avatar: "Avt2",
-    name: "Tina Snow",
+    name: "Shachar Press",
     review:
-      "Lorem ipsum dolor sit amet, vel dicta postea dolorum ut, dolor omnes an nec, nam aperiri tibique conceptam id. Te elit omnium nusquam pri. Ex vide reque saepe eum. Sit ceteros facilisis referrentur an, ex eos alia porro, ut eam graece iuvaret legendos. No aperiam deterruisset has. Ex errem constituto mea. Mazim harum iracundia nec eu, nam prompta tibique voluptatibus et.",
-  },
-  {
-    avatar: "Avt3",
-    name: "Tina Snow",
-    review:
-      "Lorem ipsum dolor sit amet, vel dicta postea dolorum ut, dolor omnes an nec, nam aperiri tibique conceptam id. Te elit omnium nusquam pri. Ex vide reque saepe eum. Sit ceteros facilisis referrentur an, ex eos alia porro, ut eam graece iuvaret legendos. No aperiam deterruisset has. Ex errem constituto mea. Mazim harum iracundia nec eu, nam prompta tibique voluptatibus et.",
-  },
-  {
-    avatar: "Avt4",
-    name: "Tina Snow",
-    review:
-      "Lorem ipsum dolor sit amet, vel dicta postea dolorum ut, dolor omnes an nec, nam aperiri tibique conceptam id. Te elit omnium nusquam pri. Ex vide reque saepe eum. Sit ceteros facilisis referrentur an, ex eos alia porro, ut eam graece iuvaret legendos. No aperiam deterruisset has. Ex errem constituto mea. Mazim harum iracundia nec eu, nam prompta tibique voluptatibus et.",
+      `Working with Ron is very pleasant, available and able to provide solutions
+      Even after several months he sent me a screenshot of an action I forgot how to do
+      He has a wide knowledge of website development and even when I needed something complicated that I wanted, he searched for it and implemented it on the website.
+      My site in terms of Google optimization is good and it is constantly progressing even when I don't invest in it.
+      
+      It is recommended to work with him as a person and as a professional.`,
   },
 ];
 
 const articleGeneretor = dummyData.map(({ avatar, name, review }, index) => {
   return (
     <SwiperSlide key={index} className="testimonial">
-      <div className="client__avatar">
-        <img src={avatar} alt="Avatar One" />
-      </div>
+
       <h5 className="client__name">{name}</h5>
       <small className="client__review">{review}</small>
     </SwiperSlide>

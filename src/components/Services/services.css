@@ -7,7 +7,7 @@ button {
 .services__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  gap: 1rem;
 }
 
 .service {
@@ -37,7 +37,7 @@ button {
 }
 
 .service__list {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .service__list li {
@@ -48,8 +48,8 @@ button {
 
 .service__list-icon {
   color: var(--color-primary);
-  margin-top: -17px;
-  font-size: 60px;
+  font-size: 2rem;
+  min-width: 10%;
 }
 
 .service__list p {

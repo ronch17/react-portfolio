@@ -1,53 +1,32 @@
 import { useCallback, useEffect, useState } from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/Artboard 2.png";
+import toDos from "../../assets/todos-app.png";
+import diceRoll from "../../assets/dice-rolling.png";
+import arcadeGame from "../../assets/arcade-game.png";
+import wwWizard from "../../assets/wwWizard.png";
 
 const dummyPortfolio = [
   {
-    image: IMG1,
-    title: "This is a portfolio item title",
-    links: ["https://github.com/ronch17", "https://facebook.com"],
+    image: toDos,
+    title: "To-Dos Management app",
+    links: ["https://github.com/ronch17/Todos-app", "https://ron-todos-app.netlify.app/"],
   },
   {
-    image: IMG1,
-    title: "This is a portfolio item title",
-    links: ["https://github.com/ronch17", "https://facebook.com"],
+    image: wwWizard,
+    title: "My custom website",
+    links: ["https://github.com/ronch17/wwwizard", "https://wwwizard.co.il/"],
   },
   {
-    image: IMG1,
-    title: "This is a portfolio item title",
-    links: ["https://github.com/ronch17", "https://facebook.com"],
+    image: diceRoll,
+    title: "Rolling dice 2 player game",
+    links: ["https://github.com/ronch17/RollAndDice", "https://ron-dice-roll.netlify.app/"],
   },
   {
-    image: IMG1,
-    title: "This is a portfolio item title",
-    links: ["https://github.com/ronch17", "https://facebook.com"],
+    image: arcadeGame,
+    title: "Guess the number game",
+    links: ["https://github.com/ronch17/Arcade-Game", "https://ron-arcade-game.netlify.app/"],
   },
-  {
-    image: IMG1,
-    title: "This is a portfolio item title",
-    links: ["https://github.com/ronch17", "https://facebook.com"],
-  },
-  {
-    image: IMG1,
-    title: "This is a portfolio item title",
-    links: ["https://github.com/ronch17", "https://facebook.com"],
-  },
-  {
-    image: IMG1,
-    title: "This is a portfolio item title",
-    links: ["https://github.com/ronch17", "https://facebook.com"],
-  },
-  {
-    image: IMG1,
-    title: "This is a portfolio item title",
-    links: ["https://github.com/ronch17", "https://facebook.com"],
-  },
-  {
-    image: IMG1,
-    title: "This is a portfolio item title",
-    links: ["https://github.com/ronch17", "https://facebook.com"],
-  },
+ 
 ];
 
 const Portfolio = () => {
