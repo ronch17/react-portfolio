@@ -2,7 +2,6 @@ import React from "react";
 import "./about.css";
 import ME from "../../assets/Ron-about2.png";
 import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
 import { VscFolderOpened } from "react-icons/vsc";
 
 const About = () => {
@@ -23,43 +22,39 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>2+ Years Working</small>
+              <small>4+ Years Working</small>
             </article>
-            <article className="about__card">
-              <FiUsers className="about__icon" />
-              <h5>Clients</h5>
-              <small>20+ happy clients</small>
-            </article>
+            {/*<article className="about__card">*/}
+            {/*  <FiUsers className="about__icon" />*/}
+            {/*  <h5>Clients</h5>*/}
+            {/*  <small>20+ happy clients</small>*/}
+            {/*</article>*/}
             <article className="about__card">
               <VscFolderOpened className="about__icon" />
               <h5>Projects</h5>
-              <small>up to 30 Completed</small>
+              <small>up to 60 Completed</small>
             </article>
           </div>
 
           <p>
-            Hi there! My name is Ron, and I'm a web developer with a passion for
-            creating dynamic and user-friendly websites.
-            <br /> having an experience of more than two years, I've been
-            working for personal clients and fintech company as web developer, I
-            developed a strong skillset in HTML, CSS, JavaScript, React,
-            Wordpress, Php, along with designing in Figma, XD, illustrator,
-            Photoshop and even created animations with After effects for
-            websites.
-            <br /> My approach to web development is to combine creativity and
-            functionality to deliver high-quality and visually appealing
-            websites. I strive to make sure that each website I build is
-            responsive and optimized for performance, providing an excellent
-            user experience across all devices. I am a detail-oriented person
-            who enjoys working with clients to understand their unique needs and
-            creating custom solutions that align with their business objectives.
-            I'm constantly learning and keeping up-to-date with the latest web
-            development trends and best practices to ensure that the websites I
+            Frontend Developer with a passion for creating beautiful and
+            functional web applications. I have a strong background in web development and have worked with a variety of technologies including HTML, SCSS, JavaScript, React, Node, Wordpress and Php.
+            <br /> Having an experience of more than four years, I've been
+            working for personal clients and fintech companies, I
+            developed unique and creative web applications, authentication systems,
+            maintained http requests, worked with Docker and maintained linux based vps's, added GSAP
+            utilities which enhanced the companies business and user experience.
+            <br />  <br />
+            I am a detail-oriented and autodidact person who enjoys bringing new ideas to life,
+            making sure for the best user experience and delivering the best results.
+            <br />
+            I'm constantly learning and keeping up to date with the latest web
+            development trends and best practices to ensure that the applications I
             build are modern, secure, and maintainable.
           </p>
 
-          <a href="#contact" className="btn btn-primary">
-            Let's Talk
+          <a href="#portfolio" className="btn btn-primary">
+            My Projects
           </a>
         </div>
       </div>

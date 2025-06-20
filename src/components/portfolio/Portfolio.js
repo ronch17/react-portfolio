@@ -1,20 +1,39 @@
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import "./portfolio.css";
 import toDos from "../../assets/todos-app.png";
 import diceRoll from "../../assets/dice-rolling.png";
 import arcadeGame from "../../assets/arcade-game.png";
 import wwWizard from "../../assets/wwWizard.png";
+import interviewApp from "../../assets/ai-interview-app.png"
+import bgApp from "../../assets/bg-app.png"
+import parallax from "../../assets/parallax.png"
+import parallax2 from "../../assets/parallax2.png"
+import template1 from "../../assets/template1.png"
+import template2 from "../../assets/template2.png"
+import template3 from "../../assets/template3.png"
+import template4 from "../../assets/template4.png"
+import template5 from "../../assets/template5.png"
+import template6 from "../../assets/template6.png"
+import omFinance from "../../assets/om-finance.png"
+import kingOfPuh from "../../assets/king-of-puh.png"
+import LoadMoreBtn from "./LoadMoreBtn"
+import Apps from "./apps/Apps";
 
 const dummyPortfolio = [
   {
-    image: toDos,
-    title: "To-Dos Management app",
-    links: ["https://github.com/ronch17/Todos-app", "https://ron-todos-app.netlify.app/"],
+    image: interviewApp,
+    title: "Ai Interview App",
+    links: ["https://github.com/ronch17/Todos-app", "https://ai-mock-interviews-one-rust.vercel.app/"],
   },
   {
-    image: wwWizard,
-    title: "My custom website",
-    links: ["https://github.com/ronch17/wwwizard", "https://wwwizard.co.il/"],
+    image: bgApp,
+    title: "Image Background Generator App",
+    links: ["https://github.com/ronch17/Todos-app", "https://remove-bg-wine.vercel.app/"],
+  },
+  {
+    image: toDos,
+    title: "To-Dos Management App",
+    links: ["https://github.com/ronch17/Todos-app", "https://ron-todos-app.netlify.app/"],
   },
   {
     image: diceRoll,
@@ -26,11 +45,69 @@ const dummyPortfolio = [
     title: "Guess the number game",
     links: ["https://github.com/ronch17/Arcade-Game", "https://ron-arcade-game.netlify.app/"],
   },
- 
 ];
 
+const websites = [
+  {
+    image: parallax,
+    title: "Parallax",
+    links: ["https://github.com/ronch17/Todos-app", "https://ron-dev.com/"],
+  },
+  {
+    image: parallax2,
+    title: "Parallax 2",
+    links: ["https://github.com/ronch17/Todos-app", "https://template2.ron-dev.com/account-types-new"],
+  },
+  {
+    image: template1,
+    title: "Template 1",
+    links: ["https://github.com/ronch17/Todos-app", "https://template1.ron-dev.com/account-types-new"],
+  },
+  {
+    image: template2,
+    title: "template 3",
+    links: ["https://github.com/ronch17/wwwizard", "https://template3.ron-dev.com/account-types-new"],
+  },
+  {
+    image: template3,
+    title: "Template 4",
+    links: ["https://github.com/ronch17/RollAndDice", "https://template4.ron-dev.com/account-types-new"],
+  },
+  {
+    image: template4,
+    title: "Template 5",
+    links: ["https://github.com/ronch17/Arcade-Game", "https://template5.ron-dev.com/account-types-new"],
+  },
+  {
+    image: template5,
+    title: "Template 6",
+    links: ["https://github.com/ronch17/Arcade-Game", "https://template6.ron-dev.com/account-types-new"],
+  },
+  {
+    image: template6,
+    title: "Template 7",
+    links: ["https://github.com/ronch17/Arcade-Game", "https://demo3-theme.leveratetech.com/"],
+  },
+  {
+    image: omFinance,
+    title: "OM Finance",
+    links: ["https://github.com/ronch17/Arcade-Game", "https://om-finance.com/"],
+  },
+  {
+    image: kingOfPuh,
+    title: "King Of Puh",
+    links: ["https://github.com/ronch17/Arcade-Game", "https://kingofpuh.co.il/"],
+  },
+  {
+    image: wwWizard,
+    title: "My custom website",
+    links: ["https://github.com/ronch17/wwwizard", "https://wwwizard.co.il/"],
+  },
+];
+
+
 const Portfolio = () => {
-  const [data, setData] = useState(dummyPortfolio);
+  const [data, setData] = useState({dummyPortfolio, websites});
   const [visible, setVisible] = useState(3);
 
   const loadMore = () => {
@@ -40,37 +117,17 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h2>Projects</h2>
 
       <div className="container portfolio__container">
-        {data.slice(0, visible).map((item) => {
-          return (
-            <article className="portfolio__item">
-              <div className="portfolio__item-image">
-                <img src={item.image} alt={item.image} />
-              </div>
-              <h3>{item.title}</h3>
-              <div className="portfolio__item-cta">
-                <a href={item.links[0]} className="btn" target="_blank">
-                  Github
-                </a>
-                <a
-                  href={item.links[1]}
-                  className="btn btn-primary"
-                  target="_blank"
-                >
-                  Live Demo
-                </a>
-              </div>
-            </article>
-          );
-        })}
+        <Apps visible={visible} data={data.dummyPortfolio} />
       </div>
-      <div className="load-more">
-        <button className="btn btn-primary " onClick={loadMore}>
-          Load More
-        </button>
+      <LoadMoreBtn loadMore={loadMore}/>
+      <br/>
+      <div className="container portfolio__container">
+        <Apps visible={visible} data={data.websites} />
       </div>
+      <LoadMoreBtn loadMore={loadMore}/>
     </section>
   );
 };

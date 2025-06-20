@@ -8,27 +8,28 @@ const experience = [
     skills: [
       "HTML",
       "CSS/SASS",
-      "Javascript",
+      "Vanilla Javascript",
       "TypeScript",
       "React",
+      "Next.js",
       "Wordpress",
     ],
   },
   {
     title: "Backend Development",
-    skills: ["Node", "Express", "MongoDB", "PHP", "Python"],
+    skills: ["Node", "FireBase","MySql", "MongoDB", "PHP", "Python"],
   },
   {
     title: "UI/UX",
-    skills: ["Elementor", "Figma", "Adobe XD", "Illustrator", "Photoshop"],
+    skills: ["Elementor", "GSAP", "Figma", "Adobe XD", "Illustrator", "Photoshop"],
   },
 ];
 
 const Experience = () => {
   return (
     <section id="experience">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      <h5>5 years of of learning</h5>
+      <h2>Skills</h2>
       <div className="container experience__container">
         {experience.map((item) => {
           return <ExperienceContent title={item.title} skills={item.skills} />;

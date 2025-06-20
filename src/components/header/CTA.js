@@ -4,11 +4,11 @@ import CV from "../../assets/Ron_CV 2025.pdf";
 const CTA = () => {
   return (
     <div className="cta">
-      <a href={CV} download className="btn">
-        Download CV
+      <a href="#contact" className="btn">
+        Contact Me
       </a>
-      <a href="#contact" className="btn btn-primary">
-        Let's Talk
+      <a href="#portfolio" className="btn btn-primary">
+          Projects
       </a>
     </div>
   );

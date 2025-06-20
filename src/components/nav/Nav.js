@@ -8,14 +8,12 @@ import { MdWorkOutline } from "react-icons/md";
 import { useState } from "react";
 import { Tooltip } from 'react-tooltip'
 
-
-
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
 
   return (
     <nav>
-    <Tooltip anchorSelect="#home" content="home"  place="bottom" style={{ background:"#2c2c6cab"
+    <Tooltip anchorSelect="#home" content="home"  place="bottom" style={{ background:"#2C2C6CFF"
 }} />
       <a
       id="home"
@@ -25,7 +23,7 @@ const Nav = () => {
       >
         <AiOutlineHome />
       </a>
-      <Tooltip anchorSelect=".about" content="about"  place="bottom" style={{ background:"#2c2c6cab"
+      <Tooltip anchorSelect=".about" content="about"  place="bottom" style={{ background:"rgba(44,44,108,0.9)"
 }} />
       <a
         href="#about"
@@ -34,7 +32,7 @@ const Nav = () => {
       >
         <HiOutlineUser />
       </a>
-      <Tooltip anchorSelect=".experience" content="experience"  place="bottom" style={{ background:"#2c2c6cab"
+      <Tooltip anchorSelect=".experience" content="skills"  place="bottom" style={{ background:"rgba(44,44,108,0.9)"
 }} />
       <a
         href="#experience"
@@ -42,18 +40,20 @@ const Nav = () => {
         className={activeNav === "#experience" ? "active" : "experience"}
       >
         <HiOutlineBookOpen />
+          <Tooltip anchorSelect=".services" content="experience"  place="bottom" style={{ background:"rgba(44,44,108,0.9)"
+          }} />
       </a>
-      <Tooltip anchorSelect=".services" content="services"  place="bottom" style={{ background:"#2c2c6cab"
-}} />
+
       <a
         href="#services"
         onClick={() => setActiveNav("#services")}
         className={activeNav === "#services" ? "active" : "services"}
       >
         <RiServiceLine />
+          <Tooltip anchorSelect=".portfolio" content="portfolio"  place="bottom" style={{ background:"rgba(44,44,108,0.9)"
+          }} />
       </a>
-      <Tooltip anchorSelect=".portfolio" content="portfolio"  place="bottom" style={{ background:"#2c2c6cab"
-}} />
+
       <a
         href="#portfolio"
         onClick={() => setActiveNav("#portfolio")}
@@ -61,7 +61,7 @@ const Nav = () => {
       >
         <MdWorkOutline />
       </a>
-      <Tooltip anchorSelect=".contact" content="contact"  place="bottom" style={{ background:"#2c2c6cab"
+      <Tooltip anchorSelect=".contact" content="contact"  place="bottom" style={{ background:"rgba(44,44,108,0.9)"
 }} />
       <a
         href="#contact"
