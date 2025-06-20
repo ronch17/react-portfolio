@@ -61,27 +61,27 @@ const websites = [
   {
     image: template1,
     title: "Template 1",
-    links: ["https://github.com/ronch17/Todos-app", "https://template1.ron-dev.com/account-types-new"],
+    links: ["https://github.com/ronch17/Todos-app", "https://template1.ron-dev.com/"],
   },
   {
     image: template2,
     title: "template 3",
-    links: ["https://github.com/ronch17/wwwizard", "https://template3.ron-dev.com/account-types-new"],
+    links: ["https://github.com/ronch17/wwwizard", "https://template3.ron-dev.com/"],
   },
   {
     image: template3,
     title: "Template 4",
-    links: ["https://github.com/ronch17/RollAndDice", "https://template4.ron-dev.com/account-types-new"],
+    links: ["https://github.com/ronch17/RollAndDice", "https://template4.ron-dev.com/"],
   },
   {
     image: template4,
     title: "Template 5",
-    links: ["https://github.com/ronch17/Arcade-Game", "https://template5.ron-dev.com/account-types-new"],
+    links: ["https://github.com/ronch17/Arcade-Game", "https://template5.ron-dev.com/"],
   },
   {
     image: template5,
     title: "Template 6",
-    links: ["https://github.com/ronch17/Arcade-Game", "https://template6.ron-dev.com/account-types-new"],
+    links: ["https://github.com/ronch17/Arcade-Game", "https://template6.ron-dev.com/"],
   },
   {
     image: template6,
