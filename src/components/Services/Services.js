@@ -5,10 +5,11 @@ const myServices = [
   {
     title: "Proftit",
     service: [
-      "Web Development: design and develop custom websites from scratch, utilizing modern web technologies such as HTML, CSS, JavaScript, Wordpress, PHP and React",
-      "Front-End Development: develop the front-end part of websites, including user interfaces, responsive designs, and interactive elements to enhance user experience.",
-
-      "Wordpress Development: design and create Wordpress websites, Ecommerce, content and one pages, and give the customer the option to manage, change and maintain the content easily",
+      "Developed web applications from scratch according to Figma designs, using JavaScript, Php, Scss, Gsap, WordPress and more.",
+      "Developed authentication system for the websites using React and TypeSript as widgets, which allows users login and register to the website and get access to deposit area widgets",
+      "Developed deposits area widgets with React and TypeSript giving the logged in users access to deposit, withdrawal, transfer and more. connected to the company database using REST API.",
+      "Utilized websites with GSAP and intersection observer for creating custom unique animations which enhanced the user experience and increased the company revenue by 20%.",
+      "Mananged the customers vps's using Linux and Bash scripts, maintained and deployed the websites with Docker."
     ],
   },
   {

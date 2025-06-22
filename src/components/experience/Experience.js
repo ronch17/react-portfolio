@@ -8,6 +8,7 @@ const experience = [
     skills: [
       "HTML",
       "CSS/SASS",
+      "Tailwind",
       "Vanilla Javascript",
       "TypeScript",
       "React",
