@@ -16,6 +16,9 @@ import template5 from "../../assets/template5.png"
 import template6 from "../../assets/template6.png"
 import omFinance from "../../assets/om-finance.png"
 import kingOfPuh from "../../assets/king-of-puh.png"
+import nextBlog from "../../assets/nextjs-blog.png"
+import nextDashboard from "../../assets/next-dashboard.png"
+
 import LoadMoreBtn from "./LoadMoreBtn"
 import Apps from "./apps/Apps";
 
@@ -31,9 +34,19 @@ const dummyPortfolio = [
     links: ["https://github.com/ronch17/Todos-app", "https://remove-bg-wine.vercel.app/"],
   },
   {
+    image: nextDashboard,
+    title: "Next Dashboard app",
+    links: ["https://github.com/ronch17/Todos-app", "https://next-dashboard-henna-six.vercel.app/"],
+  },
+  {
     image: toDos,
     title: "To-Dos Management App",
     links: ["https://github.com/ronch17/Todos-app", "https://ron-todos-app.netlify.app/"],
+  },
+  {
+    image: nextBlog,
+    title: "MDX Blog",
+    links: ["https://github.com/ronch17/Todos-app", "https://rons-blog.vercel.app/"],
   },
   {
     image: diceRoll,

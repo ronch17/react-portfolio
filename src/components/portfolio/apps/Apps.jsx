@@ -8,7 +8,7 @@ const Apps = ({visible, data, loadMore}) => {
                 return (
                     <article className="portfolio__item">
                         <div className="portfolio__item-image">
-                            <img height="300" src={item.image} alt={item.image} />
+                            <img height="250" src={item.image} alt={item.image} />
                         </div>
                         <h3>{item.title}</h3>
                         <div className="portfolio__item-cta">
