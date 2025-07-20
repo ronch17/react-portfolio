@@ -18,11 +18,18 @@ const experience = [
   },
   {
     title: "Backend Development",
-    skills: ["Node", "FireBase","MySql", "MongoDB", "PHP", "Python"],
+    skills: ["Node", "FireBase", "MySql", "MongoDB", "PHP", "Python"],
   },
   {
     title: "UI/UX",
-    skills: ["Elementor", "GSAP", "Figma", "Adobe XD", "Illustrator", "Photoshop"],
+    skills: [
+      "Elementor",
+      "GSAP",
+      "Figma",
+      "Adobe XD",
+      "Illustrator",
+      "Photoshop",
+    ],
   },
 ];
 
@@ -33,7 +40,15 @@ const Experience = () => {
       <h2>Skills</h2>
       <div className="container experience__container">
         {experience.map((item) => {
-          return <ExperienceContent title={item.title} skills={item.skills} />;
+          const id = item.title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+          return (
+            <ExperienceContent
+              key={id}
+              title={item.title}
+              skills={item.skills}
+            />
+          );
         })}
       </div>
     </section>

@@ -9,7 +9,7 @@ const ExperienceContent = ({ title, skills }) => {
         <div className="experience__content">
           {skills.map((skill) => {
             return (
-              <article className="experience__details">
+              <article key={skill} className="experience__details">
                 <BsPatchCheckFill className="experience__details-icon" />
                 <div>
                   <h4>{skill}</h4>

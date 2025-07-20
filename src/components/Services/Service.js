@@ -12,7 +12,7 @@ const Service = ({ title, service }) => {
         <ul className="service__list">
           {service.map((serv) => {
             return (
-              <li>
+              <li key={serv}>
                 <BsCheck className="service__list-icon" />
                 <small>{serv}</small>
               </li>
