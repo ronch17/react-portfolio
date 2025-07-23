@@ -1,7 +1,16 @@
 import React from "react";
 import "./Apps.css";
+import ReactGA from "react-ga4";
 
-const Apps = ({ visible, data, loadMore }) => {
+const Apps = ({ visible, data }) => {
+  const projectVisitedBtnHandler = () => {
+    ReactGA.event({
+      category: "Button",
+      action: "Visited a project Button",
+      label: "Visited a project Section",
+    });
+  };
+
   return (
     <>
       {data.slice(0, visible).map((item) => {
@@ -30,6 +39,7 @@ const Apps = ({ visible, data, loadMore }) => {
                 className="btn btn-primary"
                 target="_blank"
                 rel="noreferrer"
+                onClick={projectVisitedBtnHandler}
               >
                 Live Demo
               </a>

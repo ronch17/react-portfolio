@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Experience from "./components/experience/Experience";
@@ -9,9 +9,22 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/Services/Services";
 import Testimonials from "./components/testimonials/Testimonials";
 import { useActiveSection } from "./hooks/useActiveSection";
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-1262Z4WFKD");
 
 const App = () => {
   const { activeSection, setActiveSection } = useActiveSection();
+
+  useEffect(() => {
+    if (activeSection) {
+      ReactGA.send({
+        hitType: "pageview",
+        page: `/${activeSection}`,
+        title: activeSection,
+      });
+    }
+  }, [activeSection]);
 
   return (
     <Fragment>
