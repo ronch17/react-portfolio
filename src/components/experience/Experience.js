@@ -7,7 +7,7 @@ const experience = [
     title: "Frontend Development",
     skills: [
       "HTML",
-      "CSS/SASS",
+      "CSS/SCSS",
       "Tailwind",
       "Vanilla Javascript",
       "TypeScript",
@@ -23,10 +23,13 @@ const experience = [
   {
     title: "UI/UX",
     skills: [
-      "Elementor",
-      "GSAP",
       "Figma",
-      "Adobe XD",
+      "GSAP",
+      "daisyUI",
+      "Shadcn",
+      "MUI",
+      "Bootstrap",
+      "Elementor",
       "Illustrator",
       "Photoshop",
     ],

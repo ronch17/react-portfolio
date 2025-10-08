@@ -7,12 +7,12 @@ import { BsFacebook } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className="footer__logo">
+      <a href="#home" className="footer__logo">
         Thanks for stopping by
       </a>
       <ul className="permalinks">
         <li>
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
@@ -35,13 +35,21 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://www.linkedin.com/in/rondeveloper/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/rondeveloper/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <BsLinkedin />
         </a>
-        <a href="https://github.com/ronch17" target="_blank">
+        <a href="https://github.com/ronch17" target="_blank" rel="noreferrer">
           <BsGithub />
         </a>
-        <a href="https://www.facebook.com/wwWizardd/" target="_blank">
+        <a
+          href="https://www.facebook.com/wwWizardd/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <BsFacebook />
         </a>
       </div>
