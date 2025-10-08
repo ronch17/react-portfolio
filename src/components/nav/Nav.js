@@ -22,7 +22,7 @@ const Nav = ({ activeSection, setActiveSection }) => {
     <nav>
       <Tooltip
         anchorSelect="#home"
-        content="home"
+        content="Home"
         place="bottom"
         style={{ background: "rgb(44,44,108)" }}
       />
@@ -36,7 +36,7 @@ const Nav = ({ activeSection, setActiveSection }) => {
       </a>
       <Tooltip
         anchorSelect=".about"
-        content="about"
+        content="About"
         place="bottom"
         style={{ background: "rgb(44,44,108)" }}
       />
@@ -49,7 +49,7 @@ const Nav = ({ activeSection, setActiveSection }) => {
       </a>
       <Tooltip
         anchorSelect=".experience"
-        content="skills"
+        content="Skills"
         place="bottom"
         style={{ background: "rgb(44,44,108)" }}
       />
@@ -61,7 +61,7 @@ const Nav = ({ activeSection, setActiveSection }) => {
         <HiOutlineBookOpen />
         <Tooltip
           anchorSelect=".services"
-          content="experience"
+          content="Experience"
           place="bottom"
           style={{ background: "rgb(44,44,108)" }}
         />
@@ -75,7 +75,7 @@ const Nav = ({ activeSection, setActiveSection }) => {
         <RiServiceLine />
         <Tooltip
           anchorSelect=".portfolio"
-          content="portfolio"
+          content="Portfolio"
           place="bottom"
           style={{ background: "rgb(44,44,108)" }}
         />
@@ -102,7 +102,7 @@ const Nav = ({ activeSection, setActiveSection }) => {
       </a>
       <Tooltip
         anchorSelect=".contact"
-        content="contact"
+        content="Contact"
         place="bottom"
         style={{ background: "rgb(44,44,108)" }}
       />
