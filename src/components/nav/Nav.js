@@ -5,6 +5,7 @@ import { HiOutlineBookOpen } from "react-icons/hi";
 import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { MdWorkOutline } from "react-icons/md";
+import { BiLike } from "react-icons/bi";
 import { Tooltip } from "react-tooltip";
 
 const Nav = ({ activeSection, setActiveSection }) => {
@@ -79,13 +80,25 @@ const Nav = ({ activeSection, setActiveSection }) => {
           style={{ background: "rgba(44,44,108,0.9)" }}
         />
       </a>
-
       <a
         href="#portfolio"
         onClick={() => handleClick("portfolio")}
         className={`${linkClass("portfolio")} portfolio`}
       >
         <MdWorkOutline />
+      </a>
+      <Tooltip
+        anchorSelect=".testimonials"
+        content="testimonials"
+        place="bottom"
+        style={{ background: "rgba(44,44,108,0.9)" }}
+      />
+      <a
+        href="#testimonials"
+        onClick={() => handleClick("testimonials")}
+        className={`${linkClass("testimonials")} testimonials`}
+      >
+        <BiLike />
       </a>
       <Tooltip
         anchorSelect=".contact"
