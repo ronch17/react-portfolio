@@ -89,7 +89,7 @@ const Nav = ({ activeSection, setActiveSection }) => {
       </a>
       <Tooltip
         anchorSelect=".testimonials"
-        content="testimonials"
+        content="Recommendations"
         place="bottom"
         style={{ background: "rgb(44,44,108)" }}
       />
