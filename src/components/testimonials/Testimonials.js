@@ -45,8 +45,8 @@ const articleGeneretor = dummyData.map(({ jobTitle, name, review }, index) => {
 const Testimonials = () => {
   return (
     <section id="testimonials">
-      <h5>Review from clients</h5>
-      <h2>Testimonials</h2>
+      <h5>What coworkers and clients says</h5>
+      <h2>Recommendations</h2>
 
       <Swiper
         className="container testimonials__container"
