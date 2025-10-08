@@ -24,7 +24,7 @@ const Nav = ({ activeSection, setActiveSection }) => {
         anchorSelect="#home"
         content="home"
         place="bottom"
-        style={{ background: "#2C2C6CFF" }}
+        style={{ background: "rgb(44,44,108)" }}
       />
       <a
         id="home"
@@ -38,7 +38,7 @@ const Nav = ({ activeSection, setActiveSection }) => {
         anchorSelect=".about"
         content="about"
         place="bottom"
-        style={{ background: "rgba(44,44,108,0.9)" }}
+        style={{ background: "rgb(44,44,108)" }}
       />
       <a
         href="#about"
@@ -51,7 +51,7 @@ const Nav = ({ activeSection, setActiveSection }) => {
         anchorSelect=".experience"
         content="skills"
         place="bottom"
-        style={{ background: "rgba(44,44,108,0.9)" }}
+        style={{ background: "rgb(44,44,108)" }}
       />
       <a
         href="#experience"
@@ -63,7 +63,7 @@ const Nav = ({ activeSection, setActiveSection }) => {
           anchorSelect=".services"
           content="experience"
           place="bottom"
-          style={{ background: "rgba(44,44,108,0.9)" }}
+          style={{ background: "rgb(44,44,108)" }}
         />
       </a>
 
@@ -77,7 +77,7 @@ const Nav = ({ activeSection, setActiveSection }) => {
           anchorSelect=".portfolio"
           content="portfolio"
           place="bottom"
-          style={{ background: "rgba(44,44,108,0.9)" }}
+          style={{ background: "rgb(44,44,108)" }}
         />
       </a>
       <a
@@ -91,7 +91,7 @@ const Nav = ({ activeSection, setActiveSection }) => {
         anchorSelect=".testimonials"
         content="testimonials"
         place="bottom"
-        style={{ background: "rgba(44,44,108,0.9)" }}
+        style={{ background: "rgb(44,44,108)" }}
       />
       <a
         href="#testimonials"
@@ -104,7 +104,7 @@ const Nav = ({ activeSection, setActiveSection }) => {
         anchorSelect=".contact"
         content="contact"
         place="bottom"
-        style={{ background: "rgba(44,44,108,0.9)" }}
+        style={{ background: "rgb(44,44,108)" }}
       />
       <a
         href="#contact"
