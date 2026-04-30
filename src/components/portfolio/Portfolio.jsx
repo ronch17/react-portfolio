@@ -19,7 +19,9 @@ import kingOfPuh from "../../assets/king-of-puh.png";
 import nextBlog from "../../assets/nextjs-blog.png";
 import nextDashboard from "../../assets/next-dashboard.png";
 import chatty from "../../assets/chatty.png";
-
+import fufinka from "../../assets/fufinka.png";
+import roga from "../../assets/roga.png";
+import dreameBeauty from "../../assets/dreame-beauty.png";
 import LoadMoreBtn from "./LoadMoreBtn";
 import Apps from "./apps/Apps";
 
@@ -66,7 +68,7 @@ const dummyPortfolio = [
   },
   {
     image: nextBlog,
-    title: "MDX Blog",
+    title: "MDX Blog App",
     links: [
       "https://github.com/ronch17/Todos-app",
       "https://rons-blog.vercel.app/",
@@ -160,6 +162,36 @@ const websites = [
       "https://om-finance.com/",
     ],
   },
+
+  {
+    image: wwWizard,
+    title: "My custom website",
+    links: ["https://github.com/ronch17/wwwizard", "https://wwwizard.co.il/"],
+  },
+];
+
+const ecommerceWebsites = [
+  {
+    image: fufinka,
+    title: "FUFINKA - React Hydrogen Ecommerce development",
+    links: [
+      "https://github.com/ronch17/fufinka",
+      "https://fufinka1-ef02da9369b8db104cb6.o2.myshopify.dev/",
+    ],
+  },
+  {
+    image: roga,
+    title: "ROGA",
+    links: ["https://github.com/ronch17/fufinka", "https://roganatural.co.il/"],
+  },
+  {
+    image: dreameBeauty,
+    title: "Dreame Beauty",
+    links: [
+      "https://github.com/ronch17/fufinka",
+      "https://www.dreame-israel.co.il/pages/dreame-beauty",
+    ],
+  },
   {
     image: kingOfPuh,
     title: "King Of Puh",
@@ -168,15 +200,14 @@ const websites = [
       "https://kingofpuh.co.il/",
     ],
   },
-  {
-    image: wwWizard,
-    title: "My custom website",
-    links: ["https://github.com/ronch17/wwwizard", "https://wwwizard.co.il/"],
-  },
 ];
 
 const Portfolio = () => {
-  const [data, setData] = useState({ dummyPortfolio, websites });
+  const [data, setData] = useState({
+    dummyPortfolio,
+    websites,
+    ecommerceWebsites,
+  });
   const [visible, setVisible] = useState(3);
 
   const loadMore = () => {
@@ -191,6 +222,14 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         <Apps visible={visible} data={data.dummyPortfolio} />
       </div>
+      <LoadMoreBtn loadMore={loadMore} />
+      <br />
+      <h2>Ecommerce Websites Development</h2>
+
+      <div className="container portfolio__container">
+        <Apps visible={visible} data={data.ecommerceWebsites} />
+      </div>
+      <br />
       <LoadMoreBtn loadMore={loadMore} />
       <br />
       <h2>Websites Development</h2>
