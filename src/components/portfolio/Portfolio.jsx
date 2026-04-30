@@ -22,6 +22,8 @@ import chatty from "../../assets/chatty.png";
 import fufinka from "../../assets/fufinka.png";
 import roga from "../../assets/roga.png";
 import dreameBeauty from "../../assets/dreame-beauty.png";
+import dora from "../../assets/dora.png";
+
 import LoadMoreBtn from "./LoadMoreBtn";
 import Apps from "./apps/Apps";
 
@@ -191,6 +193,11 @@ const ecommerceWebsites = [
       "https://github.com/ronch17/fufinka",
       "https://www.dreame-israel.co.il/pages/dreame-beauty",
     ],
+  },
+  {
+    image: dora,
+    title: "Dora Cosmetics",
+    links: ["https://github.com/ronch17/fufinka", "https://dora-shop.co.il/"],
   },
   {
     image: kingOfPuh,
