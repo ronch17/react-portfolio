@@ -22,7 +22,7 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>4+ Years Working</small>
+              <small>5+ Years Working</small>
             </article>
             {/*<article className="about__card">*/}
             {/*  <FiUsers className="about__icon" />*/}
@@ -38,19 +38,23 @@ const About = () => {
 
           <p>
             Frontend Developer with a passion for creating beautiful and
-            functional web applications. I have a strong background in web development and have worked with a variety of technologies including HTML, SCSS, JavaScript, React, Node, Wordpress and Php.
+            functional web applications. I have a strong background in web
+            development and have worked with a variety of technologies including
+            HTML, SCSS, JavaScript, React, Node, Wordpress and Php.
             <br /> Having an experience of more than four years, I've been
-            working for personal clients and fintech companies, I
-            developed unique and creative web applications, authentication systems,
-            maintained http requests, worked with Docker and maintained linux based vps's, added GSAP
-            utilities which enhanced the companies business and user experience.
-            <br />  <br />
-            I am a detail-oriented and autodidact person who enjoys bringing new ideas to life,
-            making sure for the best user experience and delivering the best results.
+            working for personal clients and fintech companies, I developed
+            unique and creative web applications, authentication systems,
+            maintained http requests, worked with Docker and maintained linux
+            based vps's, added GSAP utilities which enhanced the companies
+            business and user experience.
+            <br /> <br />
+            I am a detail-oriented and autodidact person who enjoys bringing new
+            ideas to life, making sure for the best user experience and
+            delivering the best results.
             <br />
             I'm constantly learning and keeping up to date with the latest web
-            development trends and best practices to ensure that the applications I
-            build are modern, secure, and maintainable.
+            development trends and best practices to ensure that the
+            applications I build are modern, secure, and maintainable.
           </p>
 
           <a href="#portfolio" className="btn btn-primary">

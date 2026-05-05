@@ -23,6 +23,7 @@ import fufinka from "../../assets/fufinka.png";
 import roga from "../../assets/roga.png";
 import dreameBeauty from "../../assets/dreame-beauty.png";
 import dora from "../../assets/dora.png";
+import schnitzer from "../../assets/schnitzer.png";
 
 import LoadMoreBtn from "./LoadMoreBtn";
 import Apps from "./apps/Apps";
@@ -185,6 +186,14 @@ const ecommerceWebsites = [
     image: roga,
     title: "ROGA",
     links: ["https://github.com/ronch17/fufinka", "https://roganatural.co.il/"],
+  },
+  {
+    image: schnitzer,
+    title: "Schnitzer Jewelry",
+    links: [
+      "https://github.com/ronch17/fufinka",
+      "https://sschnitzer.jewelry/",
+    ],
   },
   {
     image: dreameBeauty,

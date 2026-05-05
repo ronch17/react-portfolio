@@ -30,7 +30,7 @@ const Apps = ({ visible, data }) => {
                 href={item.links[0]}
                 className="btn"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 Github
               </a>
@@ -38,7 +38,7 @@ const Apps = ({ visible, data }) => {
                 href={item.links[1]}
                 className="btn btn-primary"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 onClick={projectVisitedBtnHandler}
               >
                 Live Demo

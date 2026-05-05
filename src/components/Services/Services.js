@@ -21,10 +21,13 @@ const myServices = [
     ],
   },
   {
-    title: "Guerrilla Digital School",
+    title: "Projects for customers and self projects",
     service: [
+      "Developed Ecommerce Fullstack websites with React Typescript, Tailwind, GraphQL, Connects to Shopify API, using Hydrogen and Shopify Storefront API",
+      "Developed Shopify Websites themes with Liquid, Css, Javascript, based on the Figma designs",
       "Developed and maintained the website according to the Figma design using WordPress, Css, Javascript",
-      "Developed the WordPress cms using advanced custom field and custom post types",
+      "Developed Fullstack applications with React, Next.js, TypeScript, Tailwind, Node.js, Express, MongoDB, MySQL, PostgreSQL, Firebase, AWS, Docker, etc.",
+      "Developed using AI tools like ChatGPT, Cursor, Claude, Gemini, etc. to generate code and improve the development process",
     ],
   },
 ];
