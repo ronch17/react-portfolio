@@ -41,7 +41,7 @@ const Apps = ({ visible, data }) => {
                 rel="noopener noreferrer"
                 onClick={projectVisitedBtnHandler}
               >
-                Live Demo
+                Visit Project
               </a>
             </div>
           </article>
