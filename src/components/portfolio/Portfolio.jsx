@@ -24,6 +24,8 @@ import roga from "../../assets/roga.png";
 import dreameBeauty from "../../assets/dreame-beauty.png";
 import dora from "../../assets/dora.png";
 import schnitzer from "../../assets/schnitzer.png";
+import havazingboim from "../../assets/zingboim.png";
+import familygroup from "../../assets/family.png";
 
 import LoadMoreBtn from "./LoadMoreBtn";
 import Apps from "./apps/Apps";
@@ -174,6 +176,19 @@ const websites = [
 ];
 
 const ecommerceWebsites = [
+  {
+    image: havazingboim,
+    title: "Hava Zingboim",
+    links: [
+      "https://github.com/ronch17/fufinka",
+      "https://havazingboim.co.il/",
+    ],
+  },
+  {
+    image: familygroup,
+    title: "Family Group",
+    links: ["https://github.com/ronch17/fufinka", "https://familygroup.co.il/"],
+  },
   {
     image: fufinka,
     title: "FUFINKA - React Hydrogen Ecommerce development",
